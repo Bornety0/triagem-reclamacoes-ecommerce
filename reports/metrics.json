@@ -1,0 +1,148 @@
+{
+  "train_size": 29363,
+  "test_size": 7601,
+  "train_negative_share": 0.3015700030650819,
+  "test_negative_share": 0.24891461649782923,
+  "chosen_model": "TF-IDF palavras + Reg. Logística",
+  "threshold": 0.5306408382303076,
+  "cv": [
+    {
+      "modelo": "TF-IDF palavras + Reg. Logística",
+      "pr_auc": 0.9373,
+      "roc_auc": 0.9741,
+      "precision_neg": 0.8501,
+      "recall_neg": 0.9366,
+      "f1_neg": 0.8913,
+      "f1_macro": 0.9204,
+      "accuracy": 0.9311
+    },
+    {
+      "modelo": "TF-IDF palavras+caracteres + Reg. Logística",
+      "pr_auc": 0.9365,
+      "roc_auc": 0.9742,
+      "precision_neg": 0.856,
+      "recall_neg": 0.9311,
+      "f1_neg": 0.892,
+      "f1_macro": 0.9212,
+      "accuracy": 0.932
+    },
+    {
+      "modelo": "TF-IDF palavras+caracteres + SVM linear",
+      "pr_auc": 0.9354,
+      "roc_auc": 0.9741,
+      "precision_neg": 0.8553,
+      "recall_neg": 0.9362,
+      "f1_neg": 0.8939,
+      "f1_macro": 0.9225,
+      "accuracy": 0.933
+    },
+    {
+      "modelo": "TF-IDF palavras + Naive Bayes",
+      "pr_auc": 0.9278,
+      "roc_auc": 0.9714,
+      "precision_neg": 0.8042,
+      "recall_neg": 0.949,
+      "f1_neg": 0.8706,
+      "f1_macro": 0.9036,
+      "accuracy": 0.9149
+    },
+    {
+      "modelo": "Regra de palavras-chave",
+      "pr_auc": 0.5674,
+      "roc_auc": 0.7318,
+      "precision_neg": 0.821,
+      "recall_neg": 0.5118,
+      "f1_neg": 0.6305,
+      "f1_macro": 0.7554,
+      "accuracy": 0.8191
+    },
+    {
+      "modelo": "Dummy (classe majoritária)",
+      "pr_auc": 0.3016,
+      "roc_auc": 0.5,
+      "precision_neg": 0.0,
+      "recall_neg": 0.0,
+      "f1_neg": 0.0,
+      "f1_macro": 0.4112,
+      "accuracy": 0.6984
+    }
+  ],
+  "test": {
+    "pr_auc": 0.9281247966019374,
+    "roc_auc": 0.9774307156424132,
+    "at_0.5": {
+      "precision_neg": 0.8213789912077741,
+      "recall_neg": 0.9381606765327696,
+      "f1_neg": 0.8758943992104614,
+      "f1_macro": 0.915389122647656,
+      "accuracy": 0.93382449677674
+    },
+    "at_threshold": {
+      "precision_neg": 0.8308128544423441,
+      "recall_neg": 0.9291754756871036,
+      "f1_neg": 0.8772455089820359,
+      "f1_macro": 0.916646695888195,
+      "accuracy": 0.9352716747796342
+    }
+  },
+  "test_comparison": [
+    {
+      "modelo": "Dummy (classe majoritária)",
+      "pr_auc": 0.2489,
+      "roc_auc": 0.5,
+      "precision_neg": 0.0,
+      "recall_neg": 0.0,
+      "f1_neg": 0.0,
+      "f1_macro": 0.4289,
+      "accuracy": 0.7511
+    },
+    {
+      "modelo": "Regra de palavras-chave",
+      "pr_auc": 0.4757,
+      "roc_auc": 0.6981,
+      "precision_neg": 0.7621,
+      "recall_neg": 0.4419,
+      "f1_neg": 0.5594,
+      "f1_macro": 0.7258,
+      "accuracy": 0.8267
+    },
+    {
+      "modelo": "TF-IDF palavras + Reg. Logística (limiar 0.53)",
+      "pr_auc": 0.9281,
+      "roc_auc": 0.9774,
+      "precision_neg": 0.8308,
+      "recall_neg": 0.9292,
+      "f1_neg": 0.8772,
+      "f1_macro": 0.9166,
+      "accuracy": 0.9353
+    }
+  ],
+  "by_length": [
+    {
+      "palavras": "1-3",
+      "n": 1505.0,
+      "f1_neg": 0.6753,
+      "acerto": 0.9668
+    },
+    {
+      "palavras": "4-10",
+      "n": 3112.0,
+      "f1_neg": 0.8778,
+      "acerto": 0.955
+    },
+    {
+      "palavras": "11-25",
+      "n": 2186.0,
+      "f1_neg": 0.8849,
+      "acerto": 0.9126
+    },
+    {
+      "palavras": "26+",
+      "n": 798.0,
+      "f1_neg": 0.8942,
+      "acerto": 0.8609
+    }
+  ],
+  "neutral_flagged_negative": 0.5778097982708934,
+  "neutral_size": 694
+}

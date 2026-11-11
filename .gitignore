@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+# The dataset is downloaded by src/download_data.py (Kaggle license: keep the source as the official page)
+data/*.csv
